@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <script src="jquery.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+    <link rel="stylesheet" type="text/css" href="chessboard.css" />
+  </head>
+  <body>
+    <svg>
+      <symbol id="arrow">
+        <path d="M10 30 v-5 h20 v-5 l15 10 M10 30 v5 h20 v5 l15 -10"></path>
+      </symbol>
+      <g stroke-width="2.5">
+        <path stroke-dasharray="3, 3" d="M300 215 345 215" stroke='#fdd100' />
+        <path stroke-dasharray="3, 3" d="M430 215 490 215" stroke='#fdd100' />
+        <path stroke-dasharray="5, 5" d="M300 235 537 235" stroke='#fdd100' />
+
+        <path stroke-dasharray="3, 3" d="M345 620 400 620" stroke='#e95a6f' />
+        <path stroke-dasharray="3, 3" d="M490 620 537 620" stroke='#e95a6f' />
+        <path stroke-dasharray="5, 5" d="M300 600 537 600" stroke='#e95a6f' />
+
+        <path stroke-dasharray="3, 3" d="M215 348 215 400" stroke='#80cef3' />
+        <path stroke-dasharray="3, 3" d="M215 495 215 540" stroke='#80cef3' />
+        <path stroke-dasharray="5, 5" d="M235 295 235 540" stroke='#80cef3' />
+
+        <path stroke-dasharray="3, 3" d="M620 295 620 348" stroke='#acce22' />
+        <path stroke-dasharray="3, 3" d="M620 400 620 495" stroke='#acce22' />
+        <path stroke-dasharray="5, 5" d="M600 295 600 540" stroke='#acce22' />
+     </g>
+      <use x="-10" y="-330" xlink:href="#arrow" fill="#e95a6f" transform="rotate(90 150 160)"></use>
+      <use x="0" y="200" xlink:href="#arrow" fill="#acce22"></use>
+      <use x="-650" y="190" xlink:href="#arrow" fill="#fdd100" transform="rotate(270 90 90)"></use>
+      <use x="-480" y="-450" xlink:href="#arrow" fill="#80cef3" transform="rotate(180 180 90)"></use>
+    </svg>
+  </body>
+</html>

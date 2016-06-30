@@ -1,0 +1,191 @@
+/*
+    home
+*/
+chess-normal {
+  width: 40px;
+  height: 40px;
+  display: block;
+  border: 5px solid;
+  border-radius: 50px;
+  margin: 20px;
+}
+chess-home {
+  display: block;
+  position: absolute;
+}
+svg {
+  position: fixed;
+  z-index: 7;
+  width: 1000px;
+  height: 1000px;
+}
+.chess-home-go {
+  position: fixed;
+  z-index: 7;
+  font-size: 17px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+/*
+    parts
+*/
+chess-man {
+  width: 36px;
+  height: 36px;
+  border-radius: 50px;
+  background-color: white;
+  display: block;
+  margin: 7px;
+}
+normal-block {
+  width: 50px;
+  height: 50px;
+  display: block;
+  background-color: transparent;
+}
+double-block {
+  width: 100px;
+  height: 100px;
+  display: flex;
+}
+final-blocks {
+  display: flex;
+  position: absolute;
+}
+horizontal-blocks, ty-blocks, red-blocks {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 10;
+}
+vertical-blocks, tb-blocks, tg-blocks {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  z-index: 10;
+}
+triangle-parts {
+  border: 25px solid transparent;
+  display: block;
+  width: 0;
+  height: 0;
+}
+triangle-normal,
+tg-normal,
+red-normal,
+tb-normal,
+ty-normal {
+  width: 0;
+  height: 0;
+  border: 25px solid transparent;
+  display: block;
+}
+
+/*
+    colors
+*/
+double-block.red, normal-block.red {
+  background-color: #e95a6f;
+}
+double-block.yellow, normal-block.yellow {
+  background-color: #fdd100;
+}
+double-block.blue, normal-block.blue {
+  background-color: #80cef3;
+}
+double-block.green, normal-block.green {
+  background-color: #acce22;
+}
+.border-red {
+  border-color: #e95a6f;
+}
+.border-yellow {
+  border-color: #fdd100;
+}
+.border-blue {
+  border-color: #80cef3;
+}
+.border-green {
+  border-color: #acce22;
+}
+.third-red {
+  border-right: 25px solid #e95a6f;
+  border-bottom: 25px solid #e95a6f;
+}
+.third-yellow {
+  border-right: 25px solid #fdd100;
+  border-bottom: 25px solid #fdd100;
+}
+.third-blue {
+  border-right: 25px solid #80cef3;
+  border-bottom: 25px solid #80cef3;
+}
+.third-green {
+  border-right: 25px solid #acce22;
+  border-bottom: 25px solid #acce22;
+}
+.chess-home-go.red {
+  color: #e95a6f;
+}
+.chess-home-go.yellow {
+  color: #fdd100;
+}
+.chess-home-go.green {
+  color: #acce22;
+}
+.chess-home-go.blue {
+  color: #80cef3;
+}
+/*
+    directions
+*/
+.vertical {
+  width: 50px;
+}
+.horizontal {
+  height: 50px;
+}
+.vertical chess-man {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+.horizontal chess-man {
+  margin-left: 32px;
+  margin-right: 32px;
+}
+.horizontal-sort {
+  display: flex;
+  flex-direction: column;
+}
+.vertical-sort {
+  display: flex;
+  flex-direction: row;
+}
+
+.trape-horizontal {
+  display: flex;
+  flex-direction: row;
+}
+.trape-vertical {
+  display: flex;
+  flex-direction: column;
+}
+tri-blocks.bottom.right chess-man {
+  margin: 3px 0 0 3px;
+}
+tri-blocks.bottom.left chess-man {
+  margin: 3px 0 0 11px;
+}
+tri-blocks.top.right chess-man {
+  margin: 11px 0 0 3px;
+}
+tri-blocks.top.left chess-man {
+  margin: 11px 0 0 11px;
+}
+tb-normal  chess-man,
+tg-normal chess-man,
+red-normal chess-man,
+ty-normal chess-man {
+  margin: 0 15px 15px 0;
+  position: relative;
+}
