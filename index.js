@@ -456,26 +456,26 @@ $(document).ready(function(){
   var arrows = [
     {
       color: 'green',
-      top: 208,
-      left: 27,
+      top: 203,
+      left: 0,
       rotate: 'rotate(180deg)'
     },
     {
       color: 'red',
-      top: 27,
-      left: 628,
+      top: 12,
+      left: 610,
       rotate: 'rotate(-90deg)'
     },
     {
       color: 'yellow',
-      top: 800,
-      left: 192,
+      top: 815,
+      left: 190,
       rotate: 'rotate(90deg)'
     },
     {
       color: 'blue',
-      top: 618,
-      left: 806,
+      top: 623,
+      left: 800,
       rotate: 'rotate(0deg)'
     }
   ]
